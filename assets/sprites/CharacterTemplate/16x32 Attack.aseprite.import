@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://bqu4keyi80lcq"
+path="res://.godot/imported/16x32 Attack.aseprite-ed48085f007cbdb46efe799f1f5e0730.res"
+
+[deps]
+
+source_file="res://assets/sprites/CharacterTemplate/16x32 Attack.aseprite"
+dest_files=["res://.godot/imported/16x32 Attack.aseprite-ed48085f007cbdb46efe799f1f5e0730.res"]
+
+[params]
+

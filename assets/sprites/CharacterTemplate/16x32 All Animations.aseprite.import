@@ -1,0 +1,21 @@
+[remap]
+
+importer="aseprite_wizard.plugin.spriteframes"
+type="SpriteFrames"
+uid="uid://fmjcjn15jdgs"
+path="res://.godot/imported/16x32 All Animations.aseprite-4f13d1858b6c46c9a70a2747336e603e.res"
+
+[deps]
+
+source_file="res://assets/sprites/CharacterTemplate/16x32 All Animations.aseprite"
+dest_files=["res://.godot/imported/16x32 All Animations.aseprite-4f13d1858b6c46c9a70a2747336e603e.res"]
+
+[params]
+
+layer/exclude_layers_pattern=""
+layer/only_visible_layers=false
+sheet/sheet_type="packed"
+sheet/sheet_columns=35
+sheet/frame_padding=0
+sheet/scale=1
+animation/round_fps=true

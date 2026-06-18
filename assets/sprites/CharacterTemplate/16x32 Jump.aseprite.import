@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://c0olf1imeces6"
+path="res://.godot/imported/16x32 Jump.aseprite-4412c18b84800367d78a6d06eddc9eeb.res"
+
+[deps]
+
+source_file="res://assets/sprites/CharacterTemplate/16x32 Jump.aseprite"
+dest_files=["res://.godot/imported/16x32 Jump.aseprite-4412c18b84800367d78a6d06eddc9eeb.res"]
+
+[params]
+

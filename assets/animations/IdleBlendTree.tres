@@ -1,0 +1,44 @@
+[gd_resource type="AnimationNodeBlendSpace2D" format=3 uid="uid://e2qn624frgk5"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2ict6"]
+animation = &"CharacterAnimationsBase/Idle_Right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_i3osu"]
+animation = &"CharacterAnimationsBase/Idle_Down_Right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4si80"]
+animation = &"CharacterAnimationsBase/Idle_Down"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ugj0k"]
+animation = &"CharacterAnimationsBase/Idle_Down_Left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_3juti"]
+animation = &"CharacterAnimationsBase/Idle_Left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ujh8y"]
+animation = &"CharacterAnimationsBase/Idle_Up_Left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ukhri"]
+animation = &"CharacterAnimationsBase/Idle_Up"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_in7cm"]
+animation = &"CharacterAnimationsBase/Idle_Up_Right"
+
+[resource]
+blend_point_0/node = SubResource("AnimationNodeAnimation_2ict6")
+blend_point_0/pos = Vector2(1, 0)
+blend_point_1/node = SubResource("AnimationNodeAnimation_i3osu")
+blend_point_1/pos = Vector2(0.70710677, -0.70710677)
+blend_point_2/node = SubResource("AnimationNodeAnimation_4si80")
+blend_point_2/pos = Vector2(-4.371139e-08, -1)
+blend_point_3/node = SubResource("AnimationNodeAnimation_ugj0k")
+blend_point_3/pos = Vector2(-0.70710677, -0.70710677)
+blend_point_4/node = SubResource("AnimationNodeAnimation_3juti")
+blend_point_4/pos = Vector2(-1, 8.742278e-08)
+blend_point_5/node = SubResource("AnimationNodeAnimation_ujh8y")
+blend_point_5/pos = Vector2(-0.7071068, 0.7071067)
+blend_point_6/node = SubResource("AnimationNodeAnimation_ukhri")
+blend_point_6/pos = Vector2(1.1924881e-08, 1)
+blend_point_7/node = SubResource("AnimationNodeAnimation_in7cm")
+blend_point_7/pos = Vector2(0.70710665, 0.7071069)
+blend_mode = 1

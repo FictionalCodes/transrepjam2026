@@ -1,3 +1,72 @@
 [gd_scene format=3 uid="uid://7bh3grxq87bc"]
 
-[node name="Node2D" type="Node2D" unique_id=1256565218]
+[ext_resource type="SpriteFrames" uid="uid://bj8brhema8rqw" path="res://assets/sprites/CharacterTemplate/AnimationMaster.res" id="1_612pj"]
+[ext_resource type="Script" uid="uid://cxvrfhajkaqcj" path="res://scripts/utilities/AnimatableBody.gd" id="2_44gc5"]
+[ext_resource type="AnimationLibrary" uid="uid://cggluvwtvldby" path="res://assets/animations/CharacterAnimationsBase.res" id="3_612pj"]
+[ext_resource type="AnimationNodeBlendSpace2D" uid="uid://e2qn624frgk5" path="res://assets/animations/IdleBlendTree.tres" id="4_asog6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jotil"]
+radius = 3.0
+height = 20.0
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_asog6"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_asog6"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_mawog"]
+states/BlendSpace2D/node = SubResource("AnimationNodeBlendSpace2D_asog6")
+states/BlendSpace2D/position = Vector2(606, 114)
+states/Idle/node = ExtResource("4_asog6")
+states/Idle/position = Vector2(381, 100)
+transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_asog6")]
+
+[node name="LevelBase" type="Node2D" unique_id=1256565218]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1955381533]
+texture_filter = 1
+sprite_frames = ExtResource("1_612pj")
+animation = &"Idle_Up_Side"
+flip_h = true
+script = ExtResource("2_44gc5")
+animationLibary = ExtResource("3_612pj")
+animationTree = ExtResource("4_asog6")
+setupPlayer = true
+setupAnimationTree = true
+animation_tree_name = "Idle"
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": true,
+"layer_section": true,
+"output_section": true,
+"pending_changes": {},
+"slice_section": true
+}
+metadata/_aseprite_wizard_config_ = {
+"embed_tex": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "res://assets/sprites/CharacterTemplate",
+"o_name": "AnimationMaster.tres",
+"only_visible": false,
+"scale": "1.0",
+"should_round_fps": true,
+"slice": "",
+"source": "res://assets/sprites/CharacterTemplate/16x32 All Animations.aseprite",
+"source_uid": 376267269775964434
+}
+metadata/_aseprite_wizard_source_file_hash_ = "f8f7064ca8c7eb4050105665d925a5ee"
+
+[node name="Area2D" type="Area2D" parent="AnimatedSprite2D" unique_id=684724566]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/Area2D" unique_id=234674416]
+position = Vector2(0, 6)
+shape = SubResource("CapsuleShape2D_jotil")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite2D" unique_id=1035507367]
+libraries/CharacterAnimationsBase = ExtResource("3_612pj")
+
+[node name="AnimationTree" type="AnimationTree" parent="AnimatedSprite2D" unique_id=137925748]
+tree_root = SubResource("AnimationNodeStateMachine_mawog")
+anim_player = NodePath("../AnimationPlayer")
+parameters/BlendSpace2D/blend_position = Vector2(0, 0)
+parameters/Idle/blend_position = Vector2(-0.13184929, 0.28909945)

@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://cfubcb2vnpyet"
+path="res://.godot/imported/16x32 Run.aseprite-8294860944752ecff6f463a8d04b3e97.res"
+
+[deps]
+
+source_file="res://assets/sprites/CharacterTemplate/16x32 Run.aseprite"
+dest_files=["res://.godot/imported/16x32 Run.aseprite-8294860944752ecff6f463a8d04b3e97.res"]
+
+[params]
+

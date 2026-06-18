@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://bi645iwre46yy"
+path="res://.godot/imported/16x32 Interact.aseprite-4c7629ef8ff00766376caa80541b6c58.res"
+
+[deps]
+
+source_file="res://assets/sprites/CharacterTemplate/16x32 Interact.aseprite"
+dest_files=["res://.godot/imported/16x32 Interact.aseprite-4c7629ef8ff00766376caa80541b6c58.res"]
+
+[params]
+
